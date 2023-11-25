@@ -1,4 +1,6 @@
-const main = document.querySelector('.link');
-main.addEventListener('click', function() {
-   main.classList.add('active')
-});
+const links = document.querySelectorAll('.ref');
+links.forEach(link => {
+   link.addEventListener('click', function () {
+      link.classList.add('active');
+   })
+})
